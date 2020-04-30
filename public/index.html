@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digamelon</title>
+
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+
+<body style="max-width: fit-content;">
+
+    <div class="container">
+
+        <h2 class="titulo">Digamelón</h2>
+        <p style="text-shadow:1px -3px 5px rgba(200,145,255,0.7);font-weight:normal;
+   color:#e25f78;letter-spacing:2pt;word-spacing:1pt;font-size:12px;text-align:center;
+   font-family:lucida sans unicode, lucida grande, sans-serif;line-height:1;">Copyright © XiSKiLLo<br><br><a
+                href="https://github.com/xiskillo" target="_blank">GitHub</a></p>
+
+
+        <form id="login">
+            <input class="login_nick" type="text" id="nick" placeholder="Introduce tu Nick" />
+            <input class="login_boton" type="button" onclick="conectar()" value="CONECTAR" />
+        </form>
+
+
+        <form id="mensaje">
+            <input class="texto" type="text" id="texto" />
+            <input class="boton" type="button" value="ENVÍAR" onclick="enviar_mensaje()">
+        </form>
+       
+        
+        <p id="usuarios_online" class="usuarios_online" >LISTADO DE USUARIOS ONLINE </p>
+        
+        <div id="onliners" class="onliners">
+            
+           
+        </div>
+
+
+        <div class="chat" id="chat">
+            
+        </div>
+
+
+
+        <script src="js\jquery-3.4.1.min.js"></script>
+        <script src="socket.io\socket.io.js"></script>
+        <script src="js\sweetalert.min.js"></script>
+        <script src="js\funciones.js"></script>
+
+    </div>
+</body>
+
+</html>
